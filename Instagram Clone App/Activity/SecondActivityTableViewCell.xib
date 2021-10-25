@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondActivityTableViewCell" rowHeight="82" id="PNv-rD-CS9" customClass="SecondActivityTableViewCell" customModule="Instagram_Clone_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PNv-rD-CS9" id="71C-se-le8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="004" translatesAutoresizingMaskIntoConstraints="NO" id="RaC-uo-op2">
+                        <rect key="frame" x="14" y="4" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="1w8-i3-EVz"/>
+                            <constraint firstAttribute="height" constant="60" id="6MC-pq-vvE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shyam and ali followed shama on Instagram. See their posts." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ogs-iE-aod">
+                        <rect key="frame" x="82" y="14" width="179" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="179" id="1fj-C3-Czl"/>
+                            <constraint firstAttribute="height" constant="57" id="nJU-jD-q2L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-Yu-bVd">
+                        <rect key="frame" x="269" y="27" width="44" height="30"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="AQn-c4-MXj"/>
+                            <constraint firstAttribute="height" constant="30" id="ngR-rH-GUh"/>
+                        </constraints>
+                        <state key="normal" title="Follow">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ogs-iE-aod" firstAttribute="leading" secondItem="RaC-uo-op2" secondAttribute="trailing" constant="8" id="0Y5-OZ-vfg"/>
+                    <constraint firstAttribute="bottom" secondItem="BP5-Yu-bVd" secondAttribute="bottom" constant="25" id="0xT-wS-tV9"/>
+                    <constraint firstAttribute="bottom" secondItem="RaC-uo-op2" secondAttribute="bottom" constant="18" id="BVP-O1-O6B"/>
+                    <constraint firstItem="BP5-Yu-bVd" firstAttribute="top" secondItem="71C-se-le8" secondAttribute="top" constant="27" id="CfP-qb-Cf3"/>
+                    <constraint firstItem="BP5-Yu-bVd" firstAttribute="leading" secondItem="Ogs-iE-aod" secondAttribute="trailing" constant="8" id="Wk4-Tq-uFZ"/>
+                    <constraint firstItem="Ogs-iE-aod" firstAttribute="top" secondItem="71C-se-le8" secondAttribute="top" constant="14" id="axi-2F-arB"/>
+                    <constraint firstAttribute="trailing" secondItem="BP5-Yu-bVd" secondAttribute="trailing" constant="7" id="dZZ-92-t2g"/>
+                    <constraint firstAttribute="bottom" secondItem="Ogs-iE-aod" secondAttribute="bottom" constant="11" id="lbN-2v-jBh"/>
+                    <constraint firstItem="RaC-uo-op2" firstAttribute="leading" secondItem="71C-se-le8" secondAttribute="leading" constant="14" id="och-MA-88o"/>
+                    <constraint firstItem="RaC-uo-op2" firstAttribute="top" secondItem="71C-se-le8" secondAttribute="top" constant="4" id="qDK-nC-jmF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="riN-W1-sdC"/>
+            <connections>
+                <outlet property="btn" destination="BP5-Yu-bVd" id="bN5-FP-qhB"/>
+                <outlet property="image3" destination="RaC-uo-op2" id="Fju-kt-ey7"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="004" width="1361" height="1069.5"/>
+    </resources>
+</document>
